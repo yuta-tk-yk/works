@@ -1,0 +1,143 @@
+/* 固定 */
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+}
+body{
+    word-wrap:break-word;
+    font-family:"Meiryo";
+}
+
+
+/* ヘッダー */
+.header{
+    z-index: 10;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.header li{
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Bodoni URW';
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+}
+
+.header .title{
+    font-size: 36px;
+    font-weight: bold;    
+    margin: 0 100px;
+}
+
+/* トップページスライド */
+
+.top-slider{
+    margin-top: 100px;
+    height: 700px;
+    background-image: url('fashion-template/fashion-template-assets/woman-1245817_1920.jpg');
+    background-size:cover;
+
+}
+.top-slider img{
+    z-index: 1;
+    padding-top: 200px;
+    padding-left: 220px;
+}
+
+.top-slider .slider-text{
+    padding-left: 450px;
+}
+.top-slider h2{
+    font-size: 24px;
+    font-family: 'FOT-マティス ProN';
+    padding-bottom: 42px;
+}
+.top-slider a{
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Futura PT';
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+/* 
+fashion-template-assets/rectangle1.png */
+
+.slider-button{
+    display: flex;
+    justify-content: center;
+}
+.slider-button li{
+    font-size: 18px;
+    margin-top: 30px;
+    margin-right: 30px;
+    color: gray;
+}
+.slider-button li:first-of-type{
+    color: black;
+}
+/* トップコンテンツ */
+
+.top-contents{
+ display: flex;
+ margin-top: 172px;
+ margin-left: 200px;
+}
+.double-img{
+    position: relative;
+}
+.back-img{
+    position: absolute;
+    height: 480px;
+    width: 640px;
+}
+.front-img{
+    position: absolute;
+    top: -42px;
+    left: 32px;
+    z-index: 1; 
+}
+
+.top-contents-text{
+    margin-left: 800px;
+}
+.top-contents-text h4{
+    margin-top: 30px;   
+    font-family: 'Futura';
+    font-size: 20px;
+    line-height: 1.7; 
+    font-weight: bold;
+}
+.top-contents-text h2{
+    font-family: 'Theano Didot Regular';
+    font-size: 64px;
+    letter-spacing: 0.1em;
+}
+.top-contents-text p{
+    font-size: 18px;
+    font-family: 'YuMin';
+}
+
+.top-contents-text a{
+    font-size: 15px;
+    font-family: 'Futura PT';
+    letter-spacing: 0.05em;
+}
