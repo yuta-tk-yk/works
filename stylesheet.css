@@ -1,0 +1,2391 @@
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 600;
+    font-size: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+body{
+    word-wrap:break-word;
+    font-family:"Meiryo";
+}
+/* フォント */
+
+ul{    list-style: none;}
+h1{  font-size: 26px;
+     line-height: 50px;}
+h2{    font-size: 24px;}
+h3{    font-size: 20px;}
+h4{    font-size: 16px;}
+h5{    font-size: 14px;}
+p{
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;    
+    font-style: normal;
+}
+li{
+    list-style: none;
+}
+/* レスポンシブ　フォント アイパッド*/
+
+@media screen and (max-width:1145px){
+    p{
+        font-size: 12px;
+    }
+    
+}
+
+
+/* レスポンシブ　フォント スマホ */
+
+@media screen and (max-width:700px){
+    p{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 18px;
+        line-height: 29px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    
+}
+
+
+.btn{
+    background-color: #DA6B64;
+    color:white;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #be615a;   
+    cursor: pointer;
+}
+
+/* ボタン */
+
+
+.btn{
+    background-color: #DA6B64;
+    color:white;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: #be615a;   
+    cursor: pointer;
+}
+
+/* レスポンシブ　ボタン　アイパッド */
+@media screen and (max-width:1145px){
+        .btn{
+            background-color: #DA6B64;
+            color:white;
+            border-radius: 30px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn:hover{
+            background-color: #be615a;   
+            cursor: pointer;
+        }
+
+}
+
+/* ページトップ ボタン*/
+#page_top{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 65px;
+    height: 65px;
+    right: 60px;
+    bottom: 100px;
+    background: rgb(236,236,236);
+}
+#page_top a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+#page_top a::before{
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(51,51,51);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+/* レスポンシブ　ページトップボタン　アイフォン */
+  @media screen and (max-width:700px){
+    #page_top{
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        bottom: 20px;
+    }
+   #page_top a::before{
+        position: absolute;
+        font-weight: 600;
+        font-size: 25px;
+        top: 5px;
+        left: 15px;
+      }
+  }
+
+
+/* 使いまわし　ソーシャルボタン     */
+.social-btn span{
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+.twitter,.facebook-like,.facebook-share{
+    display: inline-block;
+    color:white;
+    height: 25px;
+    width: 90px;
+    border-radius: 7px;
+    text-decoration:none;
+    margin: 0 1px;
+    padding: 3px 5px;
+    vertical-align: middle;
+    margin-top: 30px;
+}
+.twitter{
+    background-color: rgb(27,149,224);
+}
+.facebook-like,.facebook-share{
+    background-color: rgb(24,119,242);
+}
+
+
+/* 使いまわし　ソーシャルボタン  スマホ   */
+@media screen and (max-width:700px){
+    .social-btn span{
+    font-size: 8px;
+    line-height: 12px;
+    padding-left: 5px;
+    }
+
+    .twitter,.facebook-like,.facebook-share{
+    width: 70px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 0;
+    margin-right: 1px;
+    padding: 0px 5px;
+    vertical-align: middle;
+    margin-top: 0px;
+    }
+    .social-btn i{
+        font-size: 10px;
+    }
+}
+/* 使いまわし　ソーシャルボタン  アイパッド   */
+@media screen and (max-width:1145px){
+    .social-btn span{
+    font-size: 8px;
+    line-height: 12px;
+    padding-left: 5px;
+    }
+
+    .twitter,.facebook-like,.facebook-share{
+    width: 70px;
+    height: 20px;
+    border-radius: 3px;
+    margin: 0;
+    margin-right: 1px;
+    padding: 0px 5px;
+    vertical-align: middle;
+    margin-top: 0px;
+    }
+    .social-btn i{
+        font-size: 10px;
+    }
+}
+
+/* 使いまわし　ブランク　PC*/
+.responsive-br{
+    display: none;
+}
+.responsive-br-pc{
+    display: block;
+}    
+.responsive-br-ip{
+    display: none;
+}
+
+
+/* 使いまわし ブランク　アイフォン*/
+@media screen and (max-width:700px){
+        .responsive-br-pc{
+            display: none;
+        }    
+        .responsive-br-ip{
+            display: none;
+        }
+        .responsive-br{
+            display: block;
+        }
+    
+    }
+/* 使いまわし ブランク　アイパッド*/
+@media screen and (max-width:1145px){
+    .responsive-br-pc{
+        display: none;
+    }
+    .responsive-br-ip{
+        display: block;
+    }
+    .responsive-br{
+        display: none;
+    }
+
+}
+  /* ヘッダー */
+.header{
+    height: 75px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+}
+.title{
+    margin:0 auto;
+    padding:15px 210px;
+    position: relative;
+}
+.title img{
+    width: 130px;
+    height: 45px;
+    vertical-align:bottom;
+}
+.title p{
+    display: inline-block;
+    font-size: 14px;
+}
+.header-right{
+    float: right;
+    font-size: 14px;
+    height: 45px;
+    padding: 10px 40px;
+
+}
+/* ヘッダー　レスポンシブ 　アイパッド */
+@media screen and (max-width:1145px){
+    .title{
+        padding:15px 10px;
+    }
+    .title p{
+        font-size: 12px;
+    }
+    .header-right a{
+        font-size: 12px;    
+    }
+  
+}
+
+/* ヘッダー　レスポンシブ 　スマホ*/
+@media screen and (max-width:700px){
+    .header{
+        height: 60px;
+    }
+    .title{
+        position: relative;
+        padding:0px;
+        padding-left: 10px;
+    }
+    .title img{
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+    .title p{
+        display: inline-block;
+        font-size: 10px;
+    }
+    .header-right{
+        float: right;
+        font-size: 0px;
+        white-space: nowrap;
+        width: 60px;
+        height: 60px;
+        border-radius: 0;
+        padding: 10px;
+        cursor: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-right a{
+        display: none;
+    }
+    .header-right:hover{
+        text-decoration:underline ;
+        background-color: rgb(218,107,100);
+    }
+    .header-right::before{
+        display:block;
+        content:"\f15c" ;
+        font-family: 'Font Awesome 5 Free';
+        color: white;
+        font-size: 20px;
+    }
+    .header-right::after{
+        display:block;        
+        content:"資料請求";
+        font-size: 12px;
+    }
+  
+}
+
+/* コンテナ */
+.container{
+    text-align: center;
+    width: 100%;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+/* トップコンテンツ */
+.top-contents{
+    background:url(image/main.jpg) no-repeat center ;
+    background-size: cover;
+    height:500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.top-contents img{
+    width:300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.top-contents p{
+    font-size: 20px;
+}
+/* レスポンシブ　アイパッド　トップコンテンツ */
+@media screen and (max-width:1145px){
+    .top-contents p{
+        font-size: 16px;
+    }
+}
+
+/* レスポンシブ　トップコンテンツ */
+@media screen and (max-width:700px){
+
+        .top-contents{
+        height:300px;
+        padding:25px 0 ;
+        }
+        .top-contents img{
+        margin-bottom: 40px;
+        }
+        .top-contents p{
+        font-size: 15px;
+        }
+    }
+
+/* コンバージョン */
+.conversion{
+    height:600px;
+    background-color:rgb(235,185,77);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversion h2{
+    font-size: 20px;
+    line-height: 32px;
+}
+.emphasis{
+    background-color:rgb(249,242,244) ;
+    color:rgb(199,37,78);
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    letter-spacing: 0.2em;
+}
+.conversion-btn{
+    font-size: 28px;
+    margin-top: 20px;   
+    width:1000px;
+    height: 100px;
+    border-radius: 60px;
+}
+.conversion li{
+    font-size: 21px;
+    line-height: 34px;
+    margin-top: 33px;
+}
+.conversion li br{
+    display: none;
+}
+
+
+/* レスポンシブ　アイパッド　コンバージョン　 */
+@media screen and (max-width:1145px){
+    .conversion{
+        height: auto;
+        padding: 30px 0;
+    }
+    .conversion h2{
+        font-size: 16px;
+    }
+    .conversion p{
+        font-size: 14px;
+    }
+    .conversion-btn{
+        font-size: 18px;
+        margin-top: 10px;
+        width: 90%;
+    }
+    .conversion li{
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .emphasis{
+    margin-top: 10px;
+    }
+
+
+}
+
+
+/* レスポンシブ　コンバージョン */
+@media screen and (max-width:700px){
+        .conversion{
+            padding-top: 10px;
+            height:500px;
+        }
+        .conversion h2{
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .emphasis{
+        border-radius: 5px;
+        padding: 2px;
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 10px;
+
+        }
+        .conversion-btn{
+        font-size: 20px;
+        margin-top: 20px;   
+        margin-bottom: 10px;
+        width:90%;
+        height: 100px;
+        border-radius: 60px;
+        }
+        .conversion li{
+        font-size: 15px;
+        line-height: 24px;
+        margin-top:0 ;
+        margin-bottom: 20px;
+        letter-spacing: 0.025em;
+        }
+        .conversion li br{
+            display: block;
+        }
+
+    }
+
+
+/* イントロダクション   */
+.introduction{
+    background:url(image/introbottom.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+.brackets{
+    position: relative;
+    font-size: 28px;
+    width: 860px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brackets::before,.brackets::after{
+    content: '';
+    width: 45px;
+    height: 45px;
+    position:absolute;
+    display: inline-block;
+}
+.brackets::before{
+    border-left: solid 5px rgb(235,185,77);
+    border-top: solid 5px rgb(235,185,77);
+    top:0;
+    left: 0;
+}
+.brackets::after{
+    border-right:solid 5px rgb(235,185,77);
+    border-bottom: solid 5px rgb(235,185,77);
+    bottom: 0;
+    right: 0;
+}
+.box0{
+    margin: 40px auto;
+}
+.introduction p{
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.under-line{
+    display: inline-block;
+    border-bottom: solid 10px rgb(235,185,77);
+    line-height: 100%;
+    padding: 0;
+}
+/* レスポンシブ　イントロダクション　アイパッド */
+
+@media screen and (max-width:1145px){
+        .introduction p{
+            font-size: 16px;
+            line-height: 22px;
+        }
+}
+
+/*レスポンシブ　 イントロダクション  アイフォン */
+@media screen and (max-width:700px){
+        .introduction{
+        background:url(image/introbottom.jpg) no-repeat center;
+        background-size: contain;
+        background-position: center bottom;
+        }
+        .introduction br{
+            display: block;
+        }
+        .brackets{
+            width: 90%;
+            height: 120px;
+        }
+        .brackets h2{
+            font-size: 18px;    
+            line-height: 40px;        
+        }
+        .brackets::before,.brackets::after{
+        width: 30px;
+        height: 30px;
+        border-width: 4px;
+        }
+        .box0{
+        margin: 30px auto;
+        }
+        .introduction p{
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 24px;
+        }
+
+        .under-line{
+        border-bottom: solid 8px rgb(235,185,77);
+        }
+    }
+
+/* アバウト */
+.about{
+    position: relative;
+    background-color: rgb(254,245,224);
+    padding-bottom: 77px;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.about-logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(235,185,77);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box2{
+    height: 135px;    
+    margin-bottom: 40px;
+}
+.message1{
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom: 40px; 
+}
+.contentsbox{
+    height: 250px;
+    max-width:1170px;
+    background-color: white;
+    border: solid 3px rgb(235,185,77);
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.box3 ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.box3 li{
+    margin-right: 20px;
+}
+.box3 img{
+    object-fit: cover;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.box3 p{
+    font-weight: 300;
+}
+
+/* レスポンシブ　アバウト　アイパッド */
+@media screen and (max-width:1145px){
+    .about p{
+        font-size: 14px;
+        font-weight: 400;
+    }    
+    .message1{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .box3{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .box3 h3{
+        font-size: 16px;
+        font-weight: 600;
+}
+}
+
+
+/* レスポンシブ　アバウト アイフォン　*/
+@media screen and (max-width:700px){
+    .about h2{
+        font-size: 18px;
+    }    
+    .about-logo{
+        width: 60px;
+        height: 60px;
+    }
+    .about-logo p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .box2{
+        height: 135px;    
+        margin-bottom: 40px;
+    }
+    .message1{
+        font-size:15px;
+        font-weight: 600;
+        margin-bottom: 40px; 
+    }
+    .contentsbox{
+        height: 270px;
+        width: 90%;
+        padding:10px 0;
+    }
+    .box3 h3{
+        font-size: 15px;
+    }
+    .box3 img{
+        height: 35px;
+    }
+    .box3 ul{
+        display: inline-block;
+        margin-top: 0px;
+    }
+    .box3 li{
+        margin-top: 15px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .box3 p{
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
+
+/* アバウトセカンド */
+
+.aboutsecond{
+    background:url(image/aboutsecondbg.jpg) no-repeat center;
+    background-size: cover;
+    height:455px;
+    width: 100%;
+    color:white;
+}
+.aboutsecond h2{
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+.aboutsecond h3{
+    padding-bottom: 35px;
+}
+.aboutsecond span{
+    color:rgb(235,185,77);
+}
+.box4{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.minibox{
+    height: 175px;
+    min-width:375px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 17px;
+}
+
+.minibox h5{
+    margin:30px;
+    background-color: rgb(235,185,77);
+    border-radius: 5px;
+}
+.minibox p{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;   
+}
+.minibox h4{
+    color: black;
+    margin: 25px 0;
+}
+
+/* レスポンシブ　アバウトセカンド　アイパッド */
+@media screen and (max-width:1145px){
+    .aboutsecond{
+        height:auto;
+        padding-bottom: 40px;
+        background-color: black;
+    }
+    .aboutsecond h2{
+        font-size: 24px;
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .aboutsecond h3{
+        font-size: 16px;
+
+        padding-bottom: 35px;
+    }
+    .box4{
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .minibox{
+        height: 160px;
+
+        width: 40%;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    .minibox h5,.minibox p,.minibox h4{
+        font-size: 12px;
+    }
+    .minibox h5{
+        margin:30px;
+
+    }
+    .minibox h4{
+        margin:15px 20px;
+    }
+}
+
+
+
+
+/* レスポンシブ　アバウトセカンド */
+@media screen and (max-width:700px){
+        .aboutsecond{
+            height:630px;
+        }
+        .aboutsecond h2{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+        .aboutsecond h3{
+            padding-bottom: 35px;
+            font-size: 13px;
+        }
+        .box4{
+            margin-bottom: 40px;
+            flex-direction: column;
+        }
+        .minibox{
+            width: 90%;
+            margin: 10px auto;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .minibox h5,.minibox p,.minibox h4{
+            font-size: 12px;
+        }
+        .minibox h5{
+            margin:15px;
+        }
+        .minibox h4{
+            margin-top: 5px;
+        }
+    }
+
+
+/* ライン */
+.line{
+  height: 145px;
+  background-color: rgb(1,110,169);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line span{
+    color: rgb(235,185,77);
+}
+/* レスポンシブ　ライン　アイパッド */
+@media screen and (max-width:1145px){
+    .line{
+        height: 130px;
+    }
+    .line h3{
+        font-size: 16px;
+    }
+}
+/* レスポンシブ　ライン 　アイフォン　*/
+@media screen and (max-width:700px){
+    .line{
+        height: 100px;
+    }
+    .line h3{
+        font-size: 12px;
+    }
+}
+
+/* アバウトサード */
+
+.about-third{
+    padding-top: 65px;
+    height: 500px;
+    background-color: white;
+}
+.about-third span{
+    font-size: 14px;
+}
+.about-third p{
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 300;    
+}
+.image-box{
+    display: flex;
+    justify-content: center;    
+}
+.image-box img{
+    margin-right: 50px;
+    max-width: 180px;
+    object-fit: cover;
+}
+.about-third h5{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 16px
+}
+/* レスポンシブ　アバウトサード アイパッド　*/
+@media screen and (max-width:1145px){
+    .about-third p{
+        font-size: 16px;
+    }
+    .image-box{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .image-box img{
+        margin-right: 40px;
+        width: 20%;
+    }
+}
+
+/* レスポンシブ　アバウトサード 　アイフォン*/
+@media screen and (max-width:700px){
+    .about-third{
+        padding-top: 50px;
+        padding-bottom: 40px;
+        height: 330px;
+    }
+    .about-third h2{
+        font-size: 18px;
+    }
+    .about-third span{
+        font-size: 12px;
+    }
+    .about-third p{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .image-box{
+        width: 100%;
+    }
+    .image-box img{
+        margin-right: 10px;
+        width: 20%;
+    }
+    .about-third h5{
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 12px
+    }
+}
+
+
+
+/* メリット */
+.merit{
+    height: 1024px;
+    background-color: rgb(254,245,224);
+    padding-top: 40px;
+}
+.box5{
+    margin-bottom: 40px;
+}
+.box5 p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.box6{
+    display: flex;
+    justify-content: center;
+}
+.box6 li{
+    margin-right: 30px;
+    width: 360px;
+    text-align: left;
+}
+.box6 img{
+    width: 360px;
+    object-fit: cover;
+}
+.box6 h4{
+    margin-top: 15px;
+    margin-bottom: 20px;    
+    color: rgb(235,185,77);
+    font-size: 20px;
+}
+.box6 p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+}
+.box7{
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+.box7 h2{
+    color: rgb(235,185,77);
+}
+.box7 h3{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.box7 p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.attention p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* レスポンシブ　メリット */
+@media screen and (max-width:1145px){
+    .merit{
+        height: auto;
+    }
+    .box5 p{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .box6{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box6 li{
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .box6 h4{
+        font-size: 16px;
+    }
+    .box6 p{
+        font-size: 14px;
+        text-align: left;
+    }
+    .box7{
+        width: 80%;
+    }
+    .box7 h3{
+        font-size: 16px;
+    }
+    .box7 p{
+        font-size: 14px;
+    }
+    .attention{
+        width: 80%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    .attention p{
+        font-size: 12px;
+    }
+}
+
+
+
+/* レスポンシブ　メリット */
+@media screen and (max-width:700px){
+    .merit{
+        height: 1200px;
+        padding-top: 30px;
+    }
+    .box5{
+        margin-bottom: 20px;
+    }
+    .box5 p{
+        font-size: 15px;
+    }
+    .box6{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box6 li{
+        margin-right: 0;
+        width: 90%;
+        text-align: center;
+    }
+    .box6 img{
+        width: 100%;
+        height:120px;
+    }
+    .box6 h4{
+        margin:10px;    
+        font-size: 15px;
+    }
+    .box6 p{
+        font-size: 12px;
+        line-height: 19px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .box7{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height:170px ;
+        width: 90%;
+        border-width: 2px;
+    }
+    .box7 h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .box7 p{
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        white-space: nowrap;
+    }
+    .attention p{
+        font-size: 12px;
+        font-weight: 300;
+    }    
+}
+
+
+/* メンバー */
+.fas fa-address-card{
+    color: white;
+}
+.member{
+    background: url(image/teacherbg.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    height: 820px;
+}
+.member h2{
+    padding-top: 85px;
+    margin-bottom: 45px;
+}
+.member h3{
+    margin-bottom: 215px;
+}
+.member ul{
+    display: flex;
+    justify-content: center;
+}
+
+.member li{
+    margin-right: 30px;
+    border: 3px solid white;
+    width: 370px;
+    height: 390px;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    font-size: 16px;
+}
+.member img{
+    position: absolute;
+    left: 50%;
+    top: -17%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.job,.name,.explain{
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 26px;
+}
+.name{
+    padding: 15px 0;
+}
+.explain{
+    text-align: left;
+}
+/* レスポンシブ　メンバー  アイパッド*/
+@media screen and (max-width:1145px){
+    .member{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .member h3{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .member p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .member ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member li{
+        width: 90%;
+        height: auto;
+        margin-top: 200px;
+        margin-right: 0px;
+        padding:45px 40px;
+    }
+    .member img{
+        top: -30%;
+    }
+    
+}
+
+/* レスポンシブ　メンバー */
+@media screen and (max-width:700px){
+    .member{
+        height: 1220px;
+    }
+    .member h2{
+        font-size: 18px;
+        padding-top: 70px;
+        margin-bottom: 45px;
+    }
+    .member h3{
+        margin-bottom: 130px;
+        font-size: 12px;
+    }
+    .member ul{
+        flex-direction: column;
+        align-items: center;
+    }    
+    .member li{
+        margin-right: 0px;
+        margin-bottom: 120px;
+        width: 95%;
+        height: 220px;
+        padding-top: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .member img{
+        width: 120px;
+    }
+    .job,.name,.explain{
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 300;
+    }
+    .name{
+        padding: 15px 0;
+    }    
+}
+
+/* Q＆A */
+.QA{
+    position: relative;
+    height: 270px;
+    background-color: rgb(235,185,77);
+    padding: 40px 0;
+}
+.QA::after{
+    position: absolute;
+    content: "";
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: -25px;
+    width: 0;
+    height: 0;
+    border: solid rgb(235,185,77);
+    border-color: rgb(235,185,77) transparent transparent transparent;
+    border-width: 25px 25px 0 25px;
+}
+.qa-logo{
+    background-color: white;
+    color: rgb(235,185,77);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.qa-logo p{
+    font-size: 14px;
+}
+.QA .brackets,.QA .brackets::before,.QA .brackets::after{
+    color: white;
+    border-color: white;
+}
+.QA .brackets .box8{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+/* レスポンシブ　Q&A　アイパッド */
+@media screen and (max-width:1175px){
+    .qa-logo p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .box8{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+
+/* レスポンシブ　Q&A アイフォン　*/
+@media screen and (max-width:700px){
+    .QA{
+        height: 200px;
+        padding: 20px 0;
+    }
+    .QA::after{
+        bottom: -15px;
+        border-width: 15px 15px 0 15px;
+    }
+    .qa-logo{
+        width: 60px;
+        height: 60px;
+    }
+    .qa-logo p{
+        font-size: 12px;
+    }
+    .QA .brackets,.QA .brackets::before,.QA .brackets::after{
+        font-size: 14px;
+    }
+    .box8{
+        margin-top: 0px;
+        margin-bottom: 30px;
+        height: 100px;
+    }
+}
+/* 第三者の声 */
+.voice{
+    height: 1070px;
+    padding-top: 40px;
+}
+.voice h4{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.voice p{
+    font-size: 14px;
+}
+.customer-voice{
+    margin-top: 35px;
+}
+.customer1,.customer2,.customer3{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.customer-img img{
+    border: 1px solid rgb(235,185,77);
+    width:245px; 
+    object-fit: cover;
+}
+
+.customer-message{
+    max-width: 500px;
+    display: inline-block;
+    margin-left: 30px;
+    color: #777777;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.customer-message,.customer-voice a{
+    letter-spacing: 0.2em;
+    font-size: 18px;
+    color: #777777;
+    font-weight: 300;
+    font-style: italic;
+}
+.customer-voice a{
+    font-size: 15px;
+}
+/*　レスポンシブ 第三者の声 　アイパッド*/
+@media screen and (max-width:1175px){
+    .voice{
+        height: auto;
+        width: 100%;
+    }
+    .voice h4{
+        font-size: 14px;
+    }
+    .voice p{
+        font-size: 12px;
+    }
+    .customer-voice{
+        width: 100%;
+    }
+    .customer1,.customer2,.customer3{
+        width: 100%;
+        margin: 0 5px;
+    }
+    .customer-img{
+        width: 30%;
+    }
+    .customer-img img{
+        width: 100%;
+    }
+    .customer-message{
+        font-size: 18px;
+    }    
+    .customer-voice a{
+        font-size: 15px;
+    }
+
+}
+
+
+
+/*　レスポンシブ 第三者の声 　アイフォン*/
+@media screen and (max-width:700px){
+    .voice{
+        height: 900px;
+    }
+    .voice h2{
+        font-size: 18px;
+    }
+    .voice h4{
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .voice p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .customer-voice{
+        margin-top: 35px;        
+    }
+    .customer1,.customer2,.customer3{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .customer-img{
+        width: 35%;
+    }
+    .customer-img img{
+        width: 100%; 
+    }
+    
+    .customer-message{
+        margin-left: 15px;
+        width: 65%;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }    
+    .customer-voice a{
+        font-size: 15px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+
+}
+
+/* 学べる内容 */
+
+.study-contents{
+    background: url(image/classbg.jpg) no-repeat center ; 
+    background-size: cover;
+    height: 800px;   
+}
+.study-contents h2{
+    color: white;
+    padding-top: 60px;
+}
+.study-contents h4{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: white;
+}
+
+.table-double{
+    display: flex;
+    justify-content: center;
+}
+.table1{
+    margin-right: 35px;
+}
+.table1 div{
+    border: 1px solid white;
+}
+table{
+    width: 375px;
+    border-collapse: collapse;
+    border: 3px solid rgb(1,110,169);
+    border-radius: 5px;
+    position: relative;
+}
+
+table th{
+    background-color: rgb(1,110,169);
+    height: 65px;
+    color: white;
+}
+table::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: 0;
+    width: 368px;
+    height: 65px;
+    border:  1px solid white;
+
+}
+table td{
+    height: 48px;
+    background-color: white;
+    border: dashed 1px rgb(249,242,244);
+}
+/* レスポンシブ　学べる内容 アイパッド　*/
+@media screen and (max-width:1145px){
+}
+
+
+/* レスポンシブ　学べる内容 　アイフォン　*/
+@media screen and (max-width:700px){
+    .study-contents{
+        height: 970px;   
+    }
+    .study-contents h2{
+        font-size: 18px;
+    }
+    .study-contents h4{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }    
+    .table-double{
+        flex-direction: column;
+        align-items: center;
+    }
+    .table1{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .table1 div{
+        border: 1px solid white;
+    }
+    table{
+        width: 95%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 5px;
+    }    
+    table th{
+        height: 55px;
+        font-size: 15px;
+    }
+    table::before{
+        display: none;
+    }
+    table td{
+        font-size: 12px;
+        height: 40px;
+    }
+}
+/* ライン */
+
+.line2 h3{
+    font-size: 15px;
+}
+
+/* フロー */
+.flow{
+    height: 1800px;
+}
+.flow h2{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.flow-content{
+    width: 1170px;
+    height: 225px;
+    background-color:rgb(254,245,224);
+    border-radius: 10px;
+    padding-right: 50px;
+    display: flex;
+    margin: 0 auto;
+}
+.icon-undertext{
+    width: 220px;
+    padding-top: 35px;
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.icon-undertext img{
+    width: 100px;
+    height: 90px;
+}
+.icon-undertext h3{
+    font-size: 18px;    
+    white-space: nowrap;
+}
+.flow-text{
+    text-align: left;
+    height: 225px;
+    padding-top: 40px;
+}
+.flow-text p{
+    font-size: 16px;
+    display: block;
+}
+.flow-line{
+    width: 750px;
+    height: 50px;
+}
+/* レスポンシブ　フロー　 アイパッド　*/
+@media screen and (max-width:1145px){
+    .flow{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .flow>img:first-of-type{
+        width: 90%;
+    }
+    .flow-content{
+        width: 90%;
+    }
+    .icon-undertext{
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .icon-undertext img{
+        padding-bottom: 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .icon-undertext h3{
+        font-size: 18px;    
+    }
+    .flow-text p{
+        font-size: 14px;
+    }
+    .paragrah-small{
+        font-size: 12px;
+        font-weight: 300;
+    }
+}
+
+/* レスポンシブ　フロー　 アイフォン　*/
+@media screen and (max-width:700px){
+    .flow{
+        max-height: 9999px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .flow>img:first-of-type{
+        display: none;
+    }
+    .flow-line{
+        display: none;
+    }
+    .flow h2{
+        padding: 45px 0;
+    }
+    .flow-content{
+        display: block;
+        padding-top: 10px;
+        width: 95%;
+        height: 60px;
+        padding-right: 0px;
+        padding-left: 10px;
+        margin: 5px auto;
+        position: relative;
+    }
+    .icon-undertext:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .js-ac.is-active{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .icon-undertext{
+        width: 220px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .icon-undertext img{
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+    .icon-undertext h3{
+        font-size: 15px;
+    }
+    .flow-text{
+        display: none;
+        background-color: rgb(254,245,224);
+        padding-top: 30px;
+        padding-left: 10px;
+        text-align: left;
+    }    
+    .flow-text p{
+        line-height: 16px;
+        font-size: 12px;
+        font-weight: 300;
+        display: block;
+    }
+
+    .js-ac-trigger::after{
+        position: absolute;
+        display: block;
+        top: 25px;
+        right: 20px;
+        margin: auto;
+        width: 9px;
+        height: 9px;
+        content: "";
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+        transform: rotate(135deg);
+    }
+    .js-ac-trigger.is-active::after{
+        transform: rotate(-45deg);        
+    }
+}
+
+/* バンコク */
+.bangkok{
+    height:500px ;
+    background: url(image/bangkokbg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 200px 100px 200px;
+    color: white;
+    text-align: left;
+}
+.bangkok p{
+    margin: 30px 0;
+    font-size: 14px;
+}
+.bangkok ul{
+    margin-bottom: 30px;
+}
+.bangkok li{
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+/* レスポンシブ　バンコク */
+@media screen and (max-width:1145px){
+    .bangkok{
+        height:400px ;
+        padding: 60px 0px 50px 55px;
+    }
+    .bangkok p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .bangkok li{
+        font-size: 16px;
+    }
+    .bangkok h3{
+        font-size: 16px;
+    }
+}
+
+/* レスポンシブ　バンコク */
+@media screen and (max-width:700px){
+    .bangkok{
+        height:400px ;
+        padding: 50px 50px;
+    }
+    .bangkok h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    .bangkok p{
+        margin: 20px 0;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .bangkok ul{
+        margin-bottom: 30px;
+    }
+    .bangkok li{
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        margin-bottom: 10px;
+    }
+    .bangkok h3{
+        font-size: 15px;
+    }
+}
+/* ベネフィット */
+.benefit{
+    background-color: rgb(235,185,77);
+    height: 650px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.benefit p{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.benefit span{
+    color:white;
+}
+.rectangle{
+    border: 2px solid white;
+    position: relative;
+    width: 1170px;
+    height: 360px;
+    margin: 0 auto;
+}
+.rectangle h2{
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    background-color: rgb(235,185,77);
+    z-index: 5;
+    padding: 30px;
+}
+.circles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 360px;
+    width: 1170px;
+}
+.circle{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.circle h3{
+    color: rgb(235,185,77);
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 38px;
+}
+.benefit .circle p{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding:0 5px;
+}
+/* レスポンシブ　ベネフィット アイパッド　*/
+@media screen and (max-width:1450px){
+    .benefit p{
+        font-size: 14px;
+    }
+    .benefit span{
+        color:white;
+    }
+    .rectangle{
+        width: 90%;
+    }
+    .rectangle h2{
+        white-space: normal;
+        background-color:  rgb(235,185,77);
+        padding: 5px 20px 5px 20px;
+    }
+    .circles{
+        width: auto;
+    }
+
+}
+
+/* レスポンシブ　ベネフィット　アイフォン */
+@media screen and (max-width:700px){
+    .benefit{
+        height: 600px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .benefit h2{
+        font-size: 18px;
+    }
+    .benefit p{
+        padding-top: 40px;
+        padding-bottom: 70px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .rectangle{
+        width: 95%;
+        height: 345px;
+    }
+    .rectangle h2{
+        padding: 10px;
+    }
+    .circles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        height: auto;
+        width: auto;
+    }
+    .circle{
+        background-color: rgb(235,185,77);
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .circle h3{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: white;
+        font-size: 12px;
+        margin: 0 20px;
+        padding-top: 13px;
+        font-weight: 600;
+        }
+    .benefit .circle p{
+        width: 80%;
+        font-size: 12px;
+        color: white;
+        word-wrap: break-word;
+    }
+}
+/* コンセプト */
+
+.concept{
+    background: url(image/specialdetail.jpg) no-repeat center;
+    background-size: cover;
+    height:527px;
+    padding-top: 60px;
+    padding-bottom: 85px;
+    color:white;
+}
+.concept h2{
+    margin-bottom: 20px;
+}
+
+.concept .brackets{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.concept .brackets::before,.concept .brackets::after{
+    border-color: white;
+}
+
+.concept p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+/* レスポンシブ　コンセプト アイパッド　*/
+@media screen and (max-width:1145px){
+    .concept p{
+        font-size: 16px;
+    }
+}
+
+
+/* レスポンシブ　コンセプト 　アイフォン　*/
+@media screen and (max-width:700px){
+    .concept{
+        padding-bottom: 70px;
+    }
+    .concept h2{
+        font-size: 18px;
+    }
+    .concept p{
+        font-size: 12px;
+        line-height: 19px;
+    }
+    
+    .concept .brackets{
+        height:100px;
+    }
+}
+
+/* ファンデーション */
+.fundation{
+    height: 620px;
+    padding-top: 65px;
+    padding-bottom: 90px;
+}
+.fundation h4{
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+.fund-message{
+    display: flex;
+    justify-content: center;
+}
+.fundation img{
+    margin-right: 20px;
+    width: 190px;
+    height: 140px;
+}
+.ceo-message{
+    width: 640px;
+    text-align: left;
+}
+.ceo-message p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.ceo-message ul{
+    margin: 20px 0;
+}
+.ceo-message li{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* レスポンシブ　ファンデーション アイパッド　*/
+@media screen and (max-width:1145px){
+    .fundation h4{
+        font-size: 16px;
+    }    
+    .fund-message{
+        width: 95%;
+    }
+    .fundation img{
+        width: 25%;
+        height: 50%;
+    }
+}
+
+
+/* レスポンシブ　ファンデーション アイパッド　*/
+@media screen and (max-width:700px){
+    .fundation{
+        height: auto;
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+    .fundation h2{
+        font-size: 18px;
+    }
+    .fundation h4{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .fund-message{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fundation img{
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+    }
+    .ceo-message{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ceo-message p{
+        font-weight: 400;
+    }
+    .ceo-message ul{
+        margin: 10px 0;
+    }
+
+}
+
+/* コンタクトフォーム */
+
+.contact-form{
+    background-color: rgb(235,185,77);
+    height: 700px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.fa-file-alt{
+    font-size: 30px;
+    width: 30px;
+}
+.contact-form p{
+    margin-top:35px ;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-box{
+    width: 950px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    padding-left:5px;
+    box-sizing: border-box;
+}
+#big-text-box{
+    width: 950px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 25px;
+    padding: 10px 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+.box14{
+    width: 950px;
+    background-color:rgb(218,107,100) ;
+    padding: 10px 0;
+    border-radius: 20px;    
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.box14 a{
+    letter-spacing: 1em;
+    font-size: 24px;
+    font-weight: 600;
+    color:white;   
+    text-decoration: none;
+}
+
+.contact-form a:link,.contact-form a:visited,.contact-form a:hover,.contact-form a:active {
+    background-color:rgb(218,107,100);
+  }
+
+/* レスポンシブ　コンタクトフォーム アイパッド　*/
+@media screen and (max-width:1145px){    
+    .text-box{
+        width: 70%;
+    }
+    #big-text-box{
+        width: 70%;
+    }
+    .box14{
+        width: 70%;
+    }
+}
+
+/* レスポンシブ　コンタクトフォーム */
+@media screen and (max-width:700px){
+    .contact-form{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }    
+    .contact-form h2{   
+        font-size: 18px;
+    }
+    .fa-file-alt{
+        font-size: 18px;
+        width: auto;
+    }
+    .contact-form p{
+        font-size: 12px;
+    }
+    .text-box{
+        width: 90%;
+    }
+    #big-text-box{
+        width: 90%;
+    }
+    .box14{
+        width: 90%;
+    }
+}
+
+/* よくある質問 */
+
+.question{
+    height: 1325px;
+    padding: 60px 0;   
+}
+.question h2{
+    margin-bottom: 30px;
+}
+.qa-list{
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    text-align: left;
+}
+.qa{
+    display: block;
+    position: relative;
+    margin: 5px auto;
+}
+
+.accordion-title{
+    cursor: pointer;
+    padding: 20px 30px;
+    border: 1px solid rgb(229,229,229);
+    border-radius: 3px;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.accordion-title:hover{
+    text-decoration: underline;
+}
+.accordion-title::before{
+    content: '\f059';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    color: rgb(1,110,169);
+}
+.qa dd{
+    display: none;
+    height: 100px;
+    padding: 25px 15px;
+    border-bottom: 1px solid rgb(229,229,229);
+}
+.qa p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accordion-title::after{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    content: "";
+    border-top: 4px solid rgb(229,229,229);
+    border-right: 4px solid rgb(229,229,229);
+    transform: rotate(135deg);
+}
+.accordion-title.open::after{
+    transform: rotate(-45deg);
+}
+.accordion-title.open{
+    display: inline-block;
+}
+
+/* レスポンシブ　よくある質問  アイパッド　*/
+@media screen and (max-width:1145px){
+    .question{
+        height: auto;
+    }
+    .qa-list{
+        width: 100%;
+    }
+    .qa{
+        width: 90%;
+    }
+    .accordion-title{
+        width: 100%;
+    }    
+    .qa dt{
+        font-size: 16px;
+    }
+    .qa p{
+        font-size: 14px;
+    }
+}
+
+/* レスポンシブ　よくある質問 アイフォン　*/
+@media screen and (max-width:700px){
+    .question{
+        height: auto;
+        padding: 30px 0;   
+    }
+    .question h2{
+        font-size: 18px;
+    }
+    .qa-list{
+        width: 95%;
+    }
+    .accordion-title{
+        font-size: 15px;
+        padding: 5px 10px;
+        height: auto;
+        padding-right: 30px;
+
+    }
+    .qa dd{
+        display: none;
+        height: auto;
+        padding-bottom: 25px;
+
+    }
+    .qa p{
+        font-size: 12px;
+    }
+    
+    .accordion-title::after{
+        top: 13px;
+        right: 15px;
+        border-top: 5px solid rgb(229,229,229);
+        border-right: 5px solid rgb(229,229,229);
+        width: 6px;
+        height: 6px;
+    }
+}
+
+
+/* フッター */
+.footer{
+    height: 140px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: rgb(236,236,236);
+    text-align: center;
+}
+.footer p{
+    font-size: 10px;
+}
+
+.footer .twitter,.footer .facebook-like,.footer .facebook-share{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+/* レスポンシブ　フッター */
+@media screen and (max-width:1145px){
+    .footer{
+        height: auto;
+    }
+    .footer p{
+        font-weight: 300;
+    }
+}
+
+/* レスポンシブ　フッター */
+@media screen and (max-width:700px){
+    .footer{
+        height: auto;
+        padding-top: 20px;
+
+        width: 100%;
+        padding-bottom: 10px;
+        background-color: rgb(236,236,236);
+        text-align: center;
+    }
+    .footer p{
+        font-weight: 300;
+
+        font-size: 10px;
+    }
+}
