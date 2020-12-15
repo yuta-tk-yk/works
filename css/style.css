@@ -1,0 +1,85 @@
+/* 共通設定 */
+.body{
+    font-family: "HiraKakuPro";
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+  .navbar{
+    padding: 0;
+    margin: 0;
+}
+
+/* ヘッダー */
+header li{
+    font-size: 14px;
+    color:black;
+}
+#logo{
+    font-family: "HelveticaNeue";
+    color:#019bdf;
+    font-weight: 900;
+}
+#logo span,{
+    color: #30d0ed;
+}
+.contact{
+    background-color: #30d0ed;
+    color: white;
+}
+/* ファーストビューイメージ */
+.img-top{
+    padding-top: 71px;
+    background:url("../img.png");
+    height: 670px;
+    font-family: Cormorant Garamond;
+    color: white;
+    text-align: center;
+}
+.img-top h5{
+    font-size: 140px;
+}
+.img-top p{
+    font-size: 25px;
+}
+@media screen and (max-width:720px){
+    .img-top h5{
+        font-size: 100px;
+    }
+    .img-top p{
+        font-size: 18px;
+    }   
+}
+/* ニュースリスト */
+.news{
+    background-color: #edfcff;
+}
+.news-list li{
+    border-bottom: solid #93deff 1px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+.news-title{
+    font-size: 40px;
+}
+.category-link{
+    display: inline-block;
+    text-align: center;
+    background-color: #019bdf;
+    width: 80px;
+    height: 18px;
+    color: white;
+    margin: 0px 20px;
+    font-size:10px;
+    vertical-align: middle;
+}
+
+/* サービス */
+.service{
+    text-align: center;
+    margin-top: 80px;
+}
+.service p{
+    color:#30d0ed;
+}
+/*  */
