@@ -1,0 +1,159 @@
+// 共通化
+h1.p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+h1{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+h2{
+    font-weight: bold;
+    margin:50px 0;
+}
+main{
+    text-align: center;
+}
+.sp-on{
+    display: none;
+}
+.pc-on{
+    display: block;
+}
+@media screen and (max-width:720px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .sp-on{
+        display: block;
+    }
+    .pc-on{
+        display: none;
+    }
+}
+
+// ナビゲーションバー
+.top-bar{
+    justify-content: space-around;
+    font-weight: bold;
+        span{
+            font-weight: 900;
+        }
+        .top-title{
+            font-size: 1.5rem;
+        }
+        li{
+            margin-left: 50px;
+            font-weight: bold;
+        }
+}
+@media screen and (max-width:720px){
+    .top-bar{
+        .top-menu{
+            flex-direction: row;
+        }
+        .nav-item{
+            white-space: nowrap;
+        }
+        li{
+            margin-left: 40px;
+        }
+    }   
+}
+
+// ファーストビュー
+.top-slider{
+    height: 647px;
+    width: 100%;
+    background: url("../img/main-vsual-nontitle.png") no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+// アバウト デイトラとは
+.about{
+    .contents{
+        img{
+            width: 100%;
+            height:360px;
+            box-sizing: content-box;
+        }
+        div{
+            text-align: left;
+        }
+    }
+}
+@media screen and (max-width:720px){
+.about{
+    .contents{
+        img{
+            margin-bottom: 20px;
+        }
+    }
+}
+}
+
+// コース一覧
+.course{
+    img{
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+    }
+    p{
+        text-align: left;
+    }
+}
+
+// お問い合わせ
+.contact{
+    input{
+        display: block;
+        border-radius: 30px;
+        width: 50%;
+        height: 3rem;
+        margin: 0 auto;
+    }
+    .contact-btn{
+        margin-top:30px;
+        margin-bottom: 100px;
+        background-color: rgb(228,47,42);
+        width: 250px;
+        color: white;
+    }
+}
+@media screen and (max-width:720px){
+    .contact{
+        input{
+            width: 100%;
+        }
+        .contact-btn{
+            width: 100%;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+
+// フッター
+footer{
+    height: 100px;
+    text-align: right;
+    border-top: gray 1px solid;
+}
+
+@media screen and (max-width:720px){
+    footer{
+        span{
+            display: block;
+            margin: 30px 0;
+            font-size:14px;
+        }
+    }
+}

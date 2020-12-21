@@ -1,0 +1,167 @@
+h1.p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 50px 0;
+}
+
+main {
+  text-align: center;
+}
+
+.sp-on {
+  display: none;
+}
+
+.pc-on {
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .sp-on {
+    display: block;
+  }
+  .pc-on {
+    display: none;
+  }
+}
+
+.top-bar {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: bold;
+}
+
+.top-bar span {
+  font-weight: 900;
+}
+
+.top-bar .top-title {
+  font-size: 1.5rem;
+}
+
+.top-bar li {
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+  .top-bar .top-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .top-bar .nav-item {
+    white-space: nowrap;
+  }
+  .top-bar li {
+    margin-left: 40px;
+  }
+}
+
+.top-slider {
+  height: 647px;
+  width: 100%;
+  background: url("../img/main-vsual-nontitle.png") no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+.about .contents img {
+  width: 100%;
+  height: 360px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.about .contents div {
+  text-align: left;
+}
+
+@media screen and (max-width: 720px) {
+  .about .contents img {
+    margin-bottom: 20px;
+  }
+}
+
+.course img {
+  width: 100%;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.course p {
+  text-align: left;
+}
+
+.contact input {
+  display: block;
+  border-radius: 30px;
+  width: 50%;
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.contact .contact-btn {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  background-color: #e42f2a;
+  width: 250px;
+  color: white;
+}
+
+@media screen and (max-width: 720px) {
+  .contact input {
+    width: 100%;
+  }
+  .contact .contact-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+footer {
+  height: 100px;
+  text-align: right;
+  border-top: gray 1px solid;
+}
+
+@media screen and (max-width: 720px) {
+  footer span {
+    display: block;
+    margin: 30px 0;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
