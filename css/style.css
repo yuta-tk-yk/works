@@ -1,0 +1,238 @@
+main {
+  text-align: center;
+}
+
+.sp-on {
+  display: none;
+}
+
+.pc-on {
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+  .sp-on {
+    display: block;
+  }
+  .pc-on {
+    display: none;
+  }
+}
+
+header {
+  background-color: transparent;
+}
+
+.top-nav {
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+}
+
+.top-nav p {
+  font-size: 4rem;
+  font-family: "Didot";
+  margin-left: 20px;
+}
+
+.top-nav .contact {
+  text-align: right;
+}
+
+.top-nav .contact a {
+  color: #f74d95;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.top-nav .contact span {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.top {
+  height: 800px;
+  width: 100%;
+  position: relative;
+  background: url("../img/student-4311732_1280.jpg") no-repeat;
+  opacity: 0.7;
+  background-size: cover;
+  background-position: top;
+}
+
+.top .skew {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  font-size: 10rem;
+  -webkit-transform: skew(0, -6deg);
+          transform: skew(0, -6deg);
+  color: #f0f1f3;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.top .title {
+  position: absolute;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 230px;
+}
+
+.top .title h1 {
+  font-size: 4rem;
+  color: #f74d95;
+}
+
+.top .title h1 span {
+  font-size: 6rem;
+  color: #ACB6E5;
+  background: -webkit-linear-gradient(0deg, #f6c315, #f74d95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top .title h1 p {
+  font-weight: bold;
+}
+
+.top .title .sub-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .title .sub-message h3 {
+  color: #f74d95;
+  font-weight: bold;
+}
+
+.top .title .sub-message h3 span {
+  font-size: 1.5em;
+}
+
+.top .title .sub-message .circle {
+  margin-left: 50px;
+  background-color: #f74d95;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.top .title .sub-message .circle a {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.top .title .sub-message .circle a span {
+  font-size: 9rem;
+  line-height: 1;
+}
+
+.top .title button {
+  font-size: 2.4rem;
+  line-height: 1;
+  background-color: #f74d95;
+  background: -webkit-linear-gradient(0deg, #f6c315, #f74d95);
+  padding: 20px 65px;
+  border-radius: 30px;
+}
+
+.top .vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  padding-top: 200px;
+  margin-left: 90%;
+  -webkit-transform: skew(-11deg, 0);
+          transform: skew(-11deg, 0);
+  color: #f74d95;
+}
+
+.about {
+  background-color: #efefef;
+  position: relative;
+}
+
+.about .gap {
+  position: absolute;
+  font-size: 5rem;
+  top: -1em;
+  left: 45%;
+  -webkit-transform: skew(0, -10deg);
+          transform: skew(0, -10deg);
+  color: #f74d95;
+}
+
+.about h2 {
+  padding-top: 50px;
+}
+
+.about h2 span {
+  font-size: 3rem;
+}
+
+.about .merit {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .merit .merit-circle {
+  background-color: #7f6934;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(-45deg, #7f6934, #ba955a, #7f6934);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

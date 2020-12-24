@@ -1,0 +1,181 @@
+// 共通化
+main{
+    text-align: center;
+}
+.sp-on{
+    display: none;
+}
+.pc-on{
+    display: block;
+}
+@media screen and (max-width:720px){
+    .sp-on{
+        display: block;
+    }
+    .pc-on{
+        display: none;
+    }
+}
+// トップナビゲーションバー
+
+header{
+    background-color: transparent;
+}
+.top-nav{
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    p{
+        font-size: 4rem;
+        font-family: "Didot";
+        margin-left: 20px;
+    }
+
+    .contact{
+        text-align: right;
+        a{
+            color: #f74d95;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        span{
+            font-size: 1.6rem;
+            line-height: 1;
+        }
+    }
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top{
+    height: 800px;
+    width: 100%;
+    position: relative;
+    background: url("../img/student-4311732_1280.jpg") no-repeat;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: top;
+    .skew{
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        font-size: 10rem;
+        transform: skew(0,-6deg);
+        color: #f0f1f3;
+        text-align: left;
+        margin-left: 10%;
+    }
+    .title{
+        position: absolute;
+        text-align: left;
+        margin-top: 100px;
+        margin-left: 230px;
+        h1{
+            font-size: 4rem;
+            color: #f74d95;
+            span{
+                font-size: 6rem;
+                color: #ACB6E5;//非対応のブラウザでの文字色を設定
+                background: -webkit-linear-gradient(0deg, #f6c315, #f74d95);//背景色にグラデーションを指定
+                -webkit-background-clip: text;//テキストでくり抜く
+                -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示
+            }
+            p{
+                font-weight: bold;
+            }
+        }
+    .sub-message{
+        display: flex;
+        align-items: center;
+        h3{
+            color: #f74d95;
+            font-weight: bold;
+            span{
+                font-size: 1.5em;
+            }
+        }
+        .circle{
+            margin-left: 50px;
+            background-color: #f74d95;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            a{
+                font-size: 2.4rem;
+                line-height: 1;
+                span{
+                    font-size: 9rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    button{
+        font-size: 2.4rem;
+        line-height: 1;
+        background-color: #f74d95;
+        background: -webkit-linear-gradient(0deg, #f6c315, #f74d95);
+        padding: 20px 65px;
+        border-radius: 30px;
+    }
+    }
+    .vertical{
+        display: flex;
+        writing-mode: vertical-rl;
+        padding-top: 200px;
+        margin-left: 90%;
+        transform: skew(-11deg,0);
+        color: #f74d95;
+    }
+}
+
+
+.about{
+    background-color: #efefef;
+    position: relative;
+    .gap{
+        position: absolute;
+        font-size: 5rem;
+        top: -1em;
+        left: 45%;
+        transform: skew(0,-10deg);
+        color: #f74d95;
+    }
+
+    h2{
+        padding-top: 50px;
+        span{
+            font-size: 3rem;
+        }        
+    }
+    .merit{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        .merit-circle{
+            background-color: #7f6934;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: -webkit-linear-gradient(-45deg, #7f6934, #ba955a,#7f6934);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+    }
+}

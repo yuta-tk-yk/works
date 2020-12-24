@@ -1,0 +1,137 @@
+/*================================================================
+Chrome/Firefox/Edgeなど、各ブラウザはそれぞれデフォルトで効くCSSを持っています。
+何もしないと見え方が微妙に変わるので、デフォルトのCSSをリセットして
+ブラウザごとの表示の差異をなくすために書くのが「リセットCSS」です。
+================================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, button, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li, dd {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+/* フォントレスポンシブ */
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: calc(1.4rem + (1vw - 0.56rem) * -1.0000);/* 14px~10pxで可変*/
+  line-height: 1.8;
+}
+h1 {
+  font-size: calc(3rem + (1vw - 0.56rem) * 3.0000);/* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+h2 {
+  font-size: calc(2.5rem + (1vw - 0.56rem) * 1.0000);/* 20px~24pxで可変*/
+  line-height: 1.2;
+}
+h3{
+  font-size: calc(2.2rem + (1vw - 0.56rem) * 1.0000);/* 20px~24pxで可変*/
+  line-height: 1.1;
+}
+h4{
+  font-size: calc(1.8rem + (1vw - 0.56rem) * 1.0000);/* 20px~24pxで可変*/
+  line-height: 1.1;
+}
+
+p,span,a{
+  font-size: calc(1rem + (1vw - 0.56rem) * 1.0000) ;/* 20px~24pxで可変*/}
+
+@media screen and (max-width: 560px) {/* 560px以下*/
+  body{
+      font-size:1.4rem;/* 14px*/
+      line-height: 2;
+  }
+  h1{
+      font-size: 3rem;/* 24px*/
+  }
+  h2 {
+      font-size: 2.5rem;/* 20px*/
+  }
+  h3{
+      font-size: 2.2rem;
+  }    
+  h4{
+      font-size: 1.8rem;
+  }
+  p,span,a{
+      font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 960px) {/* 960px以上*/
+  body {
+      font-size:1.4rem;
+  }
+  h1 {
+      font-size: 4rem;/* 36px*/
+  }
+  h2 {
+      font-size: 5rem;/* 24px*/
+  }
+  h3{
+      font-size: 3rem;
+  }
+  h4{
+      font-size: 2.5rem;
+  }
+  p,span,a{
+      font-size: 2.0rem;
+  }
+
+}
